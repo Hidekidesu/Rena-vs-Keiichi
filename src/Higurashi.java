@@ -1,11 +1,9 @@
-
-public class Higurashi{
+public class Higurashi {
     
-    private String nome;// Nome do personagem
-    private int ataque;// Valor de ataque do personagem
-    private int pontosDeVida;// Pontos de vida do personagem
+    private String nome; // Nome do personagem
+    private int ataque; // Valor de ataque do personagem
+    private int pontosDeVida; // Pontos de vida do personagem
 
-    
     /**
      * Construtor da classe Higurashi.
      * 
@@ -13,7 +11,7 @@ public class Higurashi{
      * @param pontosDeVida Pontos de vida do personagem
      * @param ataque       Valor de ataque do personagem
      */
-    public Higurashi(String nome, int pontosDeVida, int ataque){
+    public Higurashi(String nome, int pontosDeVida, int ataque) {
         this.nome = nome;
         this.pontosDeVida = pontosDeVida;
         this.ataque = ataque;
@@ -24,43 +22,35 @@ public class Higurashi{
      * 
      * @param alvo O personagem a ser atacado
      */
-    public void atacar(Higurashi alvo){
+    public void atacar(Higurashi alvo) {
         alvo.pontosDeVida -= ataque;
     }
 
-
-    public String getNome(){
-        return nome;// Obtém o nome do personagem.
+    /**
+     * Obtém o nome do personagem.
+     * 
+     * @return O nome do personagem
+     */
+    public String getNome() {
+        return nome;
     }
 
-
-    public void setNome(String nome){
-        this.nome = nome;// Define o nome do personagem.
+    /**
+     * Obtém os pontos de vida do personagem.
+     * 
+     * @return Os pontos de vida do personagem
+     */
+    public int getPontosDeVida() {
+        return pontosDeVida;
     }
 
-
-    public int getPontosDeVida(){
-        return pontosDeVida;//  Obtém os pontos de vida do personagem.
-    }
-
-
-    public void setPontosDeVida(int pontosDeVida){
-        this.pontosDeVida = pontosDeVida;// Define os pontos de vida do personagem.
-    }
-
-
-    public int getAtaque(){
-        return ataque;// Obtém o valor de ataque do personagem.
-    }
-
-
-    public void setAtaque(int ataque){
-        this.ataque = ataque;// Define o valor de ataque do personagem.
+    /**
+     * Obtém o valor de ataque do personagem.
+     * 
+     * @return O valor de ataque do personagem
+     */
+    public int getAtaque() {
+        return ataque;
     }
     
 }
-
-
-
-
-
